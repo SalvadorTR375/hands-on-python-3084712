@@ -18,7 +18,7 @@ pprint(back_to_dict)
 
 with open("laureates.csv", "r") as f:
     reader = csv.DictReader(f)
-    laureates = list(reader)
+    laureates = list(reader)  # At the end, it is a list of dictionaries
 
 
 # 1. you can access parts of strings the same way you do lists
@@ -29,6 +29,12 @@ with open("laureates.csv", "r") as f:
 laureates_beginning_with_a = []
 # LinkedIn learner code here
 
+for laureate in laureates:
+    if laureate["name"][0] == "A":
+        laureates_beginning_with_a.append(laureate)
 
 with open("laureates.json", "w") as f:
     json.dump(laureates_beginning_with_a, f, indent=2)
+
+x = 2
+print(f"the square of {x} is {x*x}")

@@ -21,3 +21,5 @@ for i in range(5):
 # enumerate
 for i, name in enumerate(NAMES):
     print(f"{i} {name}")
+
+# LISTO

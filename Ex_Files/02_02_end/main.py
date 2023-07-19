@@ -14,3 +14,5 @@ print(intrupution, formatted)
 print(formatted.upper())
 print(formatted.lower())
 print(formatted.replace("John", "Paul"))
+
+# LISTO
